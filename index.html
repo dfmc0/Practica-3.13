@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+            <form action="pagina1.php" method="get">
+                <fieldset>
+                    <legend>
+                        Accede a tu Área Clientes
+                    </legend>
+
+                    <p>
+                        Elige tu documento:
+                        <br>
+                        <input type="radio" name="Cdoc" value="DNI" checked> DNI o Tarjeta de residencia
+                        <br>
+                        <input type="radio" name="Cdoc" value="Pasaporte"> Pasaporte
+                    </p>
+                    <p>
+                        Número de documento:
+                        <br>
+                        <input type="text" placeholder="DNI o Tarjeta de residencia" size="30">
+                    </p>
+                    <p>
+                        Fecha de Nacimiento:
+                        <br>
+                        <input type="date" name="fechaN" id="fechaN">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="recordar" id="recordar"> Recordar?
+                        <br>
+                        <center><input  class="Entrar" type="submit" id="Entrar" value="Entrar"></center>
+                    </p>
+                </fieldset>
+            </form>
+        <hr>
+            <form action="pagina2.php" method="get">
+                <fieldset>
+                    <legend>
+                        Empieza creando tu usuario
+                    </legend>
+
+                    <p>
+                        <input type="text" value="NombreU" placeholder="Nombre (como sale en el DNI)" size="30"> 
+                        <br>
+                        
+                    <p>
+                        <input type="text" hidevalue="1ApellidoU" placeholder="1º apellido (como sale en el DNI)" size="30"> 
+                        <input type="text" hidevalue="2ApellidoU" placeholder="2º apellido (como sale en el DNI)" size="30"> 
+                    </p>
+
+                    <p>
+                        Tipo de documento:
+                        <br>
+                        <select name="Doc" id="Doc" size="1">
+                                <option value="" disabled selected>DNI/NIF/CERT.AEAT</option>
+                                <option value="dni">DNI</option>
+                                <option value="nif">NIF</option>
+                                <option value="cert">CERT.AEAT</option>
+                                
+                            </optgroup>
+                        </select>
+                        <input type="number" placeholder="Número de documento">
+                    </p>
+                    <p>
+                        <input type="number" name="movil" id="movil" placeholder="Móvil">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </p>
+                </fieldset>
+            </form>
+        <hr>
+            <form action="pagina3.php" method="get">
+                <fieldset>
+                  <center><legend>¿Eres nuevo? </legend></center>
+                
+                    <p>
+                        Email:
+                        <br>
+                        <input type="text" hidevalue="Email" placeholder="Introduce tu email" size="30"> 
+                    </p>
+                    <p>
+                        Telefono:
+                        <br>
+                        <input type="number" value="Telefono" placeholder="Tu telefono" size="30"> 
+                    </p>
+                    <p>
+                        Contraseña:
+                        <br>
+                        <input type="text" hidevalue="Contraseña" placeholder="Introduce tu contraseña" size="30">
+                    </p>
+                    <p>
+                        Confirma tu contraseña:
+                        <br>
+                        <input type="text" hidevalue="CContraseña" placeholder="Confirmar contraseña" size="30">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Priviacidad" id="Priviacidad"> He leido y acepto <span class="Politica"> Politica de privacidad</span>
+                        <br>
+                        <input type="checkbox" name="Comunicaciones" id="Comunicaciones"> Sí, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil.
+                    </p>
+                    <center> <input class="CC" type="submit" value="Crear tu cuenta" name="crearcuenta" id="crearcuenta"></center>
+
+                    
+                </fieldset>
+            </form>
+    </body>
+</html>

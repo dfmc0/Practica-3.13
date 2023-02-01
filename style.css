@@ -1,0 +1,16 @@
+span.Politica{
+    text-decoration: underline;   
+}
+input.CC{
+    background-color: green;
+    color: white;
+    border: 0ch;
+    width: 5cm;
+}
+
+input.Entrar{
+    background-color: orange;
+    color: aliceblue;
+    border: 0ch;
+    width: 5cm;
+}
