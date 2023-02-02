@@ -9,8 +9,8 @@
 </head>
     <body>
             <form action="pagina1.php" method="get">
-                <fieldset>
-                    <legend>
+                <fieldset class="F1">
+                    <legend class="T1">
                         Accede a tu Área Clientes
                     </legend>
 
@@ -40,17 +40,19 @@
             </form>
         <hr>
             <form action="pagina2.php" method="get">
-                <fieldset>
-                    <legend>
+                <fieldset class="F2">
+                    <legend class="T2">
                         Empieza creando tu usuario
                     </legend>
 
                     <p>
-                        <input type="text" value="NombreU" placeholder="Nombre (como sale en el DNI)" size="30"> 
+                        <input type="text" hidevalue="NombreU" placeholder="Nombre (como sale en el DNI)" size="30"> 
                         <br>
                         
                     <p>
                         <input type="text" hidevalue="1ApellidoU" placeholder="1º apellido (como sale en el DNI)" size="30"> 
+                    </p>
+                    <p>
                         <input type="text" hidevalue="2ApellidoU" placeholder="2º apellido (como sale en el DNI)" size="30"> 
                     </p>
 
@@ -65,18 +67,22 @@
                                 
                             </optgroup>
                         </select>
+                    </p>
+                    <p>
                         <input type="number" placeholder="Número de documento">
                     </p>
                     <p>
                         <input type="number" name="movil" id="movil" placeholder="Móvil">
+                    </p>
+                    <p>
                         <input type="text" name="email" id="email" placeholder="Email">
                     </p>
                 </fieldset>
             </form>
         <hr>
             <form action="pagina3.php" method="get">
-                <fieldset>
-                  <center><legend>¿Eres nuevo? </legend></center>
+                <fieldset class="F3">
+                  <legend class="T3">¿Eres nuevo? </legend>
                 
                     <p>
                         Email:
@@ -104,7 +110,6 @@
                         <input type="checkbox" name="Comunicaciones" id="Comunicaciones"> Sí, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil.
                     </p>
                     <center> <input class="CC" type="submit" value="Crear tu cuenta" name="crearcuenta" id="crearcuenta"></center>
-
                     
                 </fieldset>
             </form>
